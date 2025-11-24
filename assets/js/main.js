@@ -47,6 +47,35 @@ if (typeof Swiper !== 'undefined') {
   })
 }
 
+
+/*==================== TESTIMONIAL SWIPER ====================*/
+if (typeof Swiper !== 'undefined') {
+  const swiperTestimonial = new Swiper('.testimonial__container', {
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 24,
+    autoHeight: true,
+    pagination: {
+      el: '.swiper-pagination-testimonial',
+      clickable: true,
+      dynamicBullets: true,
+    },
+    breakpoints: {
+      568: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      }
+    }
+  });
+}
+
+
+
+
+
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
